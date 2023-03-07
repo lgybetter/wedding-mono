@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Koa.js",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "outDir": "dist",
+    "target": "ES5",
+    "module": "commonjs",
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "inlineSourceMap": true,
+    "pretty": true
+  }
+}
