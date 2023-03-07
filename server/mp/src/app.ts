@@ -1,5 +1,9 @@
 import Koa from 'koa'
+import koaBody from 'koa-body'
+import { user } from './routers'
 
-const app = new Koa()
-app.listen()
-console.log('test')
+export const app = new Koa()
+
+app.use(koaBody({ multipart: true }))
+
+app.use(user.routes())

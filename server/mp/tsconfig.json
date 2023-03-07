@@ -1,5 +1,5 @@
 {
   "extends": "tsconfig/koajs.json",
-  "include": ["."],
+  "include": ["src/*"],
   "exclude": ["dist", "build", "node_modules"]
 }
