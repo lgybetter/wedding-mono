@@ -1,11 +1,9 @@
-import { Context } from 'koa'
 import Router from 'koa-router'
+import { user } from '../controllers'
 
 const router = new Router().prefix('/user')
 
 // 登录
-router.get('/signin', (ctx: Context) => {
-  ctx.body = 'sign in'
-})
+router.get('/signin', user.signin)
 
-export const user = router
+export const userRouter = router
